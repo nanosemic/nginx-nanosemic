@@ -13,8 +13,8 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
 
 # (Optional) If you later want to serve a local build, copy it into /usr/share/nginx/html
-# COPY build /usr/share/nginx/htmlrm
-RUN rm -rf /usr/share/nginx/html/*
+# COPY build /usr/share/nginx/html
+
 EXPOSE 80
 
 # Run nginx in foreground (required for Docker)
